@@ -57,6 +57,7 @@ button {
 .logo {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .logo__image {
@@ -64,7 +65,7 @@ button {
 }
 
 .logo__name {
-  font-size: 18px;
+  font-size: max(20px, 1.5vw);
 }
 
 .nav {
@@ -72,12 +73,13 @@ button {
 }
 
 .nav__item {
+  text-wrap: nowrap;
   display: flex;
   align-items: center;
 }
 
 .nav__link {
-  font-size: 14px;
+  font-size: max(14px, 1vw);
   color: #081e34;
 }
 
@@ -86,9 +88,10 @@ button {
 }
 
 .button {
+  text-wrap: nowrap;
   padding: 10px 12px;
   border-radius: 100px;
-  font-size: 14px;
+  font-size: max(14px, 1vw);
 }
 
 .button_gray {
@@ -103,12 +106,15 @@ button {
 }
 
 .title {
-  font-size: 54px;
-  line-height: 56px;
+  font-size: max(32px, 3.3vw);
+  line-height: max(30px, 4vw);
+}
+
+.text {
+  font-size: max(12px, 1.1vw);
 }
 
 .header__container {
-  height: 10vh;
   display: flex;
   justify-content: space-between;
   padding: 22px 0;
@@ -125,15 +131,15 @@ button {
 .welcome__content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-}
-
-.welcome .text {
-  width: 80%;
+  gap: 3vw;
 }
 
 .welcome__content .button {
   width: fit-content;
+}
+
+.welcome__image {
+  width: 40vw;
 }
 
 .work {
@@ -153,17 +159,19 @@ button {
 }
 
 .overtitle {
-  font-size: 12px;
+  font-size: max(12px, 1vw);
   line-height: 20px;
 }
 
 .cards {
   display: flex;
-  gap: 10%;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
-  flex: 1;
+  width: calc(25em + 1vmin);
+  margin-bottom: 50px;
 }
 
 .card__image {
@@ -171,7 +179,7 @@ button {
 }
 
 .card__title {
-  font-size: 24px;
+  font-size: calc(1.3em + 1vmin);
 }
 
 .card .text {
@@ -196,7 +204,7 @@ button {
 }
 
 .search-bar {
-  width: 50%;
+  width: max(100px, 50vw);
   display: flex;
   align-items: center;
   gap: 5px;
@@ -204,9 +212,11 @@ button {
   background-color: #ffffff;
   border-radius: 12px;
   border: 1px solid #e1dee7;
+  font-size: max(14px, 2vw);
 }
 
 .search-bar input {
+  width: 100%;
   color: #000000;
 }
 
@@ -230,7 +240,12 @@ button {
   gap: 8px;
 }
 
+.upload__image {
+  width: 40vw;
+}
+
 .footer {
+  border-radius: 32px 32px 0 0;
   background-color: #ffffff;
 }
 
@@ -242,4 +257,111 @@ button {
 
 .footer__text {
   color: rgba(8, 30, 52, 0.484);
+}
+
+@media screen and (max-width: 1300px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    margin: 0 auto;
+  }
+
+  .card {
+    justify-content: center;
+  }
+
+  .nav__apps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav__app {
+    margin: 0;
+    width: fit-content;
+  }
+
+  .header__container .nav .nav__item {
+    display: none;
+  }
+
+  .welcome__container {
+    margin: 20px 0;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: start;
+    gap: 50px;
+  }
+
+  .welcome__image {
+    width: 60%;
+  }
+
+  .upload__image {
+    width: 80%;
+  }
+  .welcome__content {
+    width: 80%;
+    gap: 4.5vw;
+  }
+
+  .start__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .start__content {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .upload__container {
+    flex-direction: column;
+    gap: 30vw;
+  }
+
+  .upload__button {
+    margin: 0;
+  }
+
+  .footer__container .nav {
+    flex-direction: column;
+  }
+
+  .work__container .title {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .search-bar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome__image,
+  .upload__image {
+    width: 100%;
+  }
 }
