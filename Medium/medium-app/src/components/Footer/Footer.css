@@ -1,0 +1,15 @@
+.footer {
+  height: 500px;
+}
+
+.footer__container {
+  height: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer__credits {
+  color: rgb(76, 85, 94);
+}
