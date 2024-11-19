@@ -1,0 +1,20 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: 24px 0;
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+}
+
+.menu__icon {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.menu__name {
+  font-size: 20px;
+}

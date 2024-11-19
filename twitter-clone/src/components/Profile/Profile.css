@@ -1,0 +1,25 @@
+.profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.profile__content {
+  display: flex;
+  gap: 15px;
+}
+
+.profile__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.profile__name {
+  font-size: 18px;
+}
+
+.profile__nickname {
+  font-size: 16px;
+  color: gray;
+}

@@ -1,0 +1,36 @@
+.recomendations {
+  background: #202327;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.recomendations__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.recomendations__content {
+  margin-top: 20px;
+}
+
+.recomendation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.recomendation span {
+  color: #6e767d;
+  font-size: 14px;
+}
+
+.recomendation h3 {
+  font-size: 17px;
+}
+
+.recomendations__link {
+  color: #1d9bf0;
+}
