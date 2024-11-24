@@ -1,0 +1,25 @@
+input {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+.App {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  width: 80%;
+}
+
+.vertical-divider {
+  width: 2px;
+  height: auto;
+  background-color: whitesmoke;
+}
+
+.search {
+  background-color: #e8edf0;
+}
+
+.search span {
+  color: #adb2b4;
+}
