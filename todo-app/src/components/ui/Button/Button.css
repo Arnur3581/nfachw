@@ -1,0 +1,29 @@
+.button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  height: fit-content;
+  width: fit-content;
+  transition: 0.6s;
+}
+
+.button-default {
+  background-color: #081e340d;
+}
+
+.button-blue {
+  background-color: #081e34;
+  color: #fff;
+}
+
+.button-gray {
+  background-color: #081e346b;
+  color: #fff;
+  font-weight: 700;
+}
+
+.button-circle {
+  clip-path: circle();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,34 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+  min-height: 6rem;
+}
+
+.actions__selects {
+  display: flex;
+  gap: 1rem;
+}
+
+.actions__add-button {
+  position: relative;
+}
+
+.actions__modal {
+  right: 5rem;
+  bottom: 3rem;
+}
+.actions__modal-title {
+  font-size: 1rem;
+}
+
+.actions__modal-input {
+  min-height: 5rem;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  resize: none;
+}
+
+.actions__modal-input::placeholder {
+  text-align: start;
+}

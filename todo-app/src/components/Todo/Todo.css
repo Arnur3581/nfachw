@@ -1,0 +1,51 @@
+.todo {
+  margin-bottom: 1.5rem;
+}
+
+.todo__content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo__content > * {
+  margin-right: 0.7rem;
+}
+
+.todo__more {
+  font-size: 1.5rem;
+  color: #aeaeae;
+}
+
+.todo__checkbox {
+  display: inline;
+}
+
+.todo__checkbox {
+  zoom: 1.5;
+  accent-color: #712fff;
+}
+
+.todo__text {
+  font-size: 1.3rem;
+}
+
+.todo__line {
+  text-decoration: line-through;
+  color: #959595;
+}
+
+.todo__actions .modal {
+  min-width: 15rem;
+}
+
+.todo__option {
+  display: flex;
+  align-items: center;
+  color: #353535;
+  font-size: 1.1rem;
+}
+
+.todo__option > *:first-of-type {
+  margin-right: 0.5rem;
+}
